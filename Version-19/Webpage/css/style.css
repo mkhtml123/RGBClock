@@ -1,0 +1,118 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #494848;
+}
+.colorbox{
+  height: auto;
+  width: 5cm;
+  float: bottom;
+  text-align:center;
+  border-radius: 0.1cm;
+  background-color: #666666;
+}
+.savec{
+  height: auto;
+  width: 3cm;
+  float: bottom;
+  text-align:center;
+  border-radius: 0.1cm;
+  background-color: #a6a6a6;
+}
+.save{
+  height: auto;
+  width: 1cm;
+  float: bottom;
+  text-align:center;
+  border-radius: 0.1cm;
+  background-color: #a6a6a6;
+}
+.ctext{
+  display: inline;
+}
+.colord{
+  display: flex;
+  height: 1cm;
+  width: 5cm;
+  border-radius: 0.1cm;
+  background-color: #32a852;
+}
+
+.remove{
+  display: flex;
+  height: 1cm;
+  width: 1cm;
+  border-radius: 1cm;
+  background-color: #da2727;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1cm;
+  display: inline
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #a6a6a6;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-radius: 0.5cm;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  background-color: #a6a6a6;  
+  padding: 16px;
+  text-decoration: none;
+}
+
+.newcinp{
+  border-radius: 0.2cm;
+  width: 60%;
+}
+
+input, textarea {
+  background-color : #a6a6a6; 
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #666666;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}

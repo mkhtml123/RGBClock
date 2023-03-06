@@ -1,0 +1,8 @@
+Sethostname
+set ssid
+set psk
+
+import upip
+upip.install("micropython-mdns")
+
+for mdns(hostname.local)

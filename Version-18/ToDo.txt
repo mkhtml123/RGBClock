@@ -1,0 +1,7 @@
+Timezone in settings
+Setup new devices
+error screen, done
+Serial numbers, done
+Change ssid and psk in settings
+Hostname
+Password to eneter settings

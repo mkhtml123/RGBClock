@@ -1,0 +1,43 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+  <!-- Side navigation -->
+<div class="sidebar">
+  <a href="/index.html">System info:</a>
+  <a class="active" href="/general.html">general</a>
+  <a href="/colors.html">colors</a>
+</div>
+
+<!-- Page content -->
+<div class="content" id="Inner">
+  <h1>Animations</h1>
+  animate numbers:
+  <input type="checkbox" id="Animate" name="Animate" onclick="Hidetext()">
+  <br>
+  <p style="display: none;" id="htext">animation speed:</p>
+  <input id="speed" type="number" name="Animate" style="width: 10%" size="4" hidden="">
+  <br>
+  animation frequency:
+  <input id="f" type="number" name="Animate" style="width: 10%" size="4">
+  <h1>Brightness</h1>
+  Adaptive brightness:
+  <input type="checkbox" id="AutoBright" name="Animate" onclick="Hidetext()">
+  <br>
+  <p style="display: none;" id="btext">Brightness (0-100):</p>
+  <input id="bri" type="number" name="Animate" style="width: 10%" min="0" max="100" hidden="">
+  <div class="colorbox" id="colors" style="user-select: none;">
+  </div>
+
+  <h1>Updates</h1>
+  Check for updates an install them overnight: 
+  <input type="checkbox" id="Animate" name="Animate" onclick="Hidetext()">
+<div class="save" id="save" style="user-select: none;">Save</div></div>
+<script src="/script.js"></script>
+
+</body></html>
